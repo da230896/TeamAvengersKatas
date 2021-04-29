@@ -55,10 +55,10 @@ an email to the customer with a link to a survey which the customer then fills o
 survey information.
 
 ## Existing Architecture Component
-![image](https://user-images.githubusercontent.com/1282526/116562981-d8bfc100-a92d-11eb-9588-811c65b9949a.png)
+<img src="https://user-images.githubusercontent.com/1282526/116562981-d8bfc100-a92d-11eb-9588-811c65b9949a.png" alt="arch-cmp" width="400"/>
 
 ## Existing Database Design
-![image](https://user-images.githubusercontent.com/1282526/116563180-fc830700-a92d-11eb-84d4-3efc47c0b23b.png)
+<img src="https://user-images.githubusercontent.com/1282526/116563180-fc830700-a92d-11eb-84d4-3efc47c0b23b.png" alt="arch-cmp" width="500"/>
 
 
 ## Non Ticket Workflow
