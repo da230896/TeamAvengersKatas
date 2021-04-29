@@ -1,6 +1,6 @@
 # Problem Overview
 
-## Current Situation as defined
+## Existing Situation as defined
 
 Sysops Squad - A Bad Situation…
 Things have not been good with the Sysops Squad lately. The current trouble ticket system is a large monolithic application that was developed many years
@@ -25,3 +25,55 @@ problem.
 problem and fix to the knowledge base.
 7. After the system receives notification that the ticket is complete, the system send an email to the customer with a link to a survey which the customer then
 fills out.
+
+## Existing System Design
+![image](https://user-images.githubusercontent.com/1282526/116561544-9f3a8600-a92c-11eb-8c94-48cc8092cff6.png)
+
+## Existing Database Design
+
+![image](https://user-images.githubusercontent.com/1282526/116561752-cd1fca80-a92c-11eb-998b-e80f480802f1.png)
+
+## Ticket Workflow
+
+The ticketing workflow starts when a customer enters a problem ticket into
+the system, and ends when the customer completes the survey after the
+repair is done. This workflow is outlined as follows:
+• Customers who have purchased the support plan enter a problem ticket
+using the Sysops Squad website.
+• Once a problem ticket is entered in the system, the system then
+determines which Sysops Squad expert would be the best fit for the job
+based on skills, cur‐ rent location, service area, and availability (free or
+currently on a job).
+• Once assigned, the problem ticket is uploaded to a dedicated custom
+mobile app on the Sysops Squad expert’s mobile device. The expert is
+also notified via a text message that they have a new problem ticket.
+The customer is notified through an SMS text message or email (based on their
+profile preference) that the expert is on their way.
+• The expert uses the custom mobile application on their phone to retrieve the
+ticket information and location. The sysops squad expert can also access a
+knowledge base through the mobile app to find out what things have been done
+in the past to fix the problem.
+• Once the expert fixes the problem, they mark the ticket as “complete”. The
+sysops squad expert can then add information about the problem and repair
+information to the knowledge base.
+• After the system receives notification that the ticket is complete, the system send
+an email to the customer with a link to a survey which the customer then fills out.
+• The system receives the completed survey from the customer and records the
+survey information.
+
+
+## Non Ticket Workflow
+The manager keeps track of problem ticket operations and receives
+operational and analytical reports about the overall Sysops Squad problem
+ticket system.
+• Sysops Squad experts are added and maintained in the system through
+an administrator, who enters in their locale, availability, and skills.
+• Customers register with the Sysops Squad system and have multiple
+support plans based on the products they purchased.
+• Customers are automatically billed monthly based on credit card
+information contained in their profile. Customers can view billing history
+and statements through the system.
+• Managers request and receive various operational and analytical reports,
+including financial reports, expert performance reports, and ticketing
+reports.
+
