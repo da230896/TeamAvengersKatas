@@ -1,4 +1,4 @@
-## Design Decisions
+## Design Approach
 
 ### Micro-service oriented approach
 
@@ -23,7 +23,7 @@ We do not want system to show tickets assignment to wrong expert or any sort of 
 
 **4 Deployability**
 
-System should be deployable quickly and should not take long time. Micro service arch can do that as well. 
+System should be deployable quickly and should not take long time. Micro service arch can achieve that as well. 
 
 **5 elasticity**
 
@@ -34,3 +34,10 @@ Spike in user request should be handled and there should not be a freeze on webs
 System should be reliable even in case of some of the components fail. This is because user perspective is different and do not need to know about the backend system.
 
 
+### 1<sup>st</sup> Release under Strangler Pattern
+
+However to reach there we would be incremently break the monolith away. The order of taking out component would be based on usage and load of the component. So the one with high load and usage would be taken out first.
+
+As per the strangler pattern mentioned in [Strangler Pattern ADR](https://github.com/bhalgat20/ArchitectureKatas2021/blob/main/2.ADRs/StranglerPattern.md) we will have first release which would look like below:
+
+![](../img/First release.png)
