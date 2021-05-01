@@ -1,4 +1,6 @@
-## Design Approach
+# System Approach
+
+## Final Vision
 
 ### Micro-service oriented approach
 
@@ -6,7 +8,7 @@ Final vision is to build a system based on micro services, representing logical 
 
 ![](../img/FinalUServiceArch.png)
 
-But before addressing the quality characteristics of services/bounded context system quality charactersitics must be fulfilled always.
+But before addressing the quality characteristics of services/bounded context system quality charactersitics must be fulfilled always. These characteristics would be the same throughout.
 
 #### System Quality Attributes
 **1 Availability**
@@ -34,7 +36,7 @@ Spike in user request should be handled and there should not be a freeze on webs
 System should be reliable even in case of some of the components fail. This is because user perspective is different and do not need to know about the backend system.
 
 
-### 1<sup>st</sup> Release under Strangler Pattern
+## 1<sup>st</sup> Release under Strangler Pattern
 
 However to reach there we would be incremently break the monolith away. The order of taking out component would be based on usage and load of the component. So the one with high load and usage would be taken out first.
 
