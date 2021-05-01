@@ -36,7 +36,9 @@ Spike in user request should be handled and there should not be a freeze on webs
 System should be reliable even in case of some of the components fail. This is because user perspective is different and do not need to know about the backend system.
 
 
-## 1<sup>st</sup> Release under Strangler Pattern
+## 1<sup>st</sup> Release 
+
+### Strangler Pattern
 
 However to reach there we would be incremently break the monolith away. The order of taking out component would be based on usage and load of the component. So the one with high load and usage would be taken out first.
 
