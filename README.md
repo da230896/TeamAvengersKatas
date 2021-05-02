@@ -7,10 +7,6 @@ Table of Content:
 
 - [Problem Background](1.ProblemBackground/Readme.md)
 	- [System overview](1.ProblemBackground/BusinessGoalAndScope.md)
-	- [Goals and Context](1.ProblemBackground/FunctionalRequirements.md)
-	- [Constraints](1.ProblemBackground/Constraints.md)
-	- [Stakeholder](1.ProblemBackground/Stakeholders.md)
-	- [Significant Driving Requirements](1.ProblemBackground/BusinessDrivers.md)
 - [Solution Background](2.SolutionBackground/Readme.md)
 	- [Solution Overview](2.SolutionBackground/SolutionOverview.md)
 	- [Assumptions](2.SolutionBackground/Assumptions.md)
