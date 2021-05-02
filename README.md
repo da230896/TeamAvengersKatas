@@ -13,7 +13,7 @@ Table of Content:
 	- [Approach Summary](2.SolutionBackground/SystemAppoach.md)
 	- [Tradeoffs](2.SolutionBackground/Tradeoffs.md)
 	- [Risks and Sensitive points](2.SolutionBackground/RisksAndSensitivePoints.md)
-- [ADRs](3ADRs)
+- [ADRs](3.ADRs)
 - [Views and Perspectives](3.ViewsAndPerspectives/Readme.md)
 	- [User Scenarios](3.ViewsAndPerspectives/UserScenariosPerspective.md)
 	- [Informational](3.ViewsAndPerspectives/InformationModels.md) 
