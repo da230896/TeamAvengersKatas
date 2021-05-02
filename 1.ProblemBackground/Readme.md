@@ -1,7 +1,5 @@
 # Problem Background
 
-- [Problem Overview](ProblemOverview.md)
-
 Description of current problem of Squad Ops
     
 Sysop Squad Users:
@@ -17,8 +15,8 @@ Assumptions:
 - Experts can not refuse assigned ticket, ticket refusal process is through administrator and assignment handled manually for refused tickets.
 
 Architecture Attributes 
-- Reliability (Tickets Lost, Wrong Expert Assignment)
-- Elasticity (Not able to handle burst of tickets)
+- Reliability - Tickets Lost, Wrong Expert Assignment.
+- Elasticity - Not able to handle burst of tickets.
 - Deployability - Long time to push Changes and breaks
 - Availability - available for customers and call center
 - Testability - deployment breaks system
@@ -28,3 +26,4 @@ Architecture Attributes
 
 ![image](https://user-images.githubusercontent.com/1282526/116816048-91823c00-ab8a-11eb-95b7-67af67f7aafe.png)
 
+- For details [Problem Overview](ProblemOverview.md)
