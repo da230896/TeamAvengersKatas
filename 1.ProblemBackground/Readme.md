@@ -25,3 +25,6 @@ Architecture Attributes
 - Scalability - lucrative business, might grow in country
 - Security - stores customer and experts personal information (like name, address, contact email, payment details)
 - Data integrity - operational reports for managers
+
+![image](https://user-images.githubusercontent.com/1282526/116816048-91823c00-ab8a-11eb-95b7-67af67f7aafe.png)
+
