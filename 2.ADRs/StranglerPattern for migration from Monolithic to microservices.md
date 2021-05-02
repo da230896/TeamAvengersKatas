@@ -1,5 +1,9 @@
 # Record architecture decisions
 
+## Topic
+
+<b>Use StranglerPattern for migration from Monolithic to Microservices</b>
+
 Date: 2021-05-01
 
 ## Status
@@ -16,8 +20,8 @@ We want to rearchitect the Sysops squad to handle the elasticity and reliability
 
 ## Considered options
 
-    1. Rewrite the sysops squad as greenfield applictaion.
-    2. Migrate the monolithic using strangler pattern (https://martinfowler.com/bliki/StranglerFigApplication.html) towards microservices incrementally.
+1. Rewrite the sysops squad as greenfield applictaion.
+2. Migrate the monolithic using strangler pattern (https://martinfowler.com/bliki/StranglerFigApplication.html) towards microservices incrementally. (Recommended)
 
 ## Decision
 
@@ -31,21 +35,35 @@ The plan is to get most benefit by identifying the bounded context which is havi
 Extracting Ticketing service from the monolithic can be done in following steps,
 
 
-    Split the code and convert ticketing service into a separate, loosely coupled module within the monolith
-    Split the database and define a separate schema for ticketing service management.
-    Define a standalone Ticketing Service
-    Use the standalone Ticketing Service
-    Remove the old and now unused Ticketing management functionality from the Sysops monolith
+- Split the code and convert ticketing service into a separate, loosely coupled module within the monolith
+- Split the database and define a separate schema for ticketing service management.
+- Define a standalone Ticketing Service
+- Use the standalone Ticketing Service
+- Remove the old and now unused Ticketing management functionality from the Sysops monolith
 
 
-**Positive:** 
+**Pros:** 
 
-We plan to decompose our system by finding microservice/seam along which service boundaries can emerge and this has to be an incremental approach. By doing this we reduced the overall cost of splitting our services , learn from mistakes quickly , identify the right bounded context , test is throughly , incrementely deploy new services.
+We plan to decompose our system by finding microservice/seam along which service boundaries can emerge and this has to be an incremental approach. 
+By doing this ,
+ - We reduced the overall cost of splitting our services 
+ - Learn from mistakes quickly 
+ - Identify the right bounded context 
+ - Test is throughly ,
+ - Incrementely deploy new services. 
+ - This will also improve the time to market.
 
 
+**Cons:** 
+
+Maintaining both Monolithic and Microservices at same time could be challenging in terms of deployment , scalability , integration , migration and database sync.
 
 **Risks:** 
 
 Carefully need to manage redundant or overlapping functionality in two different solutions. Migration of existing database schema and data will be challenging if not planned better.
 
 
+**References:** 
+
+-   https://martinfowler.com/bliki/StranglerFigApplication.html
+-   https://docs.microsoft.com/en-us/azure/architecture/patterns/strangler-fig
