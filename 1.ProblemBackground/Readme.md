@@ -2,5 +2,26 @@
 
 - [Problem Overview](ProblemOverview.md)
 
-    Description of current problem of Squad Ops
+Description of current problem of Squad Ops
     
+Sysop Squad Users:
+1. administrator
+2. customer
+3. Experts
+4. Manager
+
+Assumptions:
+
+- There exists certain product system. The SysOps Squad system are able to access the product information.
+- Assumed that Managers do not have critical issues on report system. 
+- Experts can not refuse assigned ticket, ticket refusal process is through administrator and assignment handled manually for refused tickets.
+
+Architecture Attributes 
+- Reliability (Tickets Lost, Wrong Expert Assignment)
+- Elasticity (Not able to handle burst of tickets)
+- Deployability - Long time to push Changes and breaks
+- Availability - available for customers and call center
+- Testability - deployment breaks system
+- Scalability - lucrative business, might grow in country
+- Security - stores customer and experts personal information (like name, address, contact email, payment details)
+- Data integrity - operational reports for managers
