@@ -3,8 +3,8 @@
 Description of current problem of Squad Ops
     
 ## Sysop Squad Actors:
-1. administrator
-2. customer
+1. Administrator
+2. Customer
 3. Experts
 4. Manager
 5. Call Center
