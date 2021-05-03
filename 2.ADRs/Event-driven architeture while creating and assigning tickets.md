@@ -1,6 +1,11 @@
 # Record architecture decisions
 
+## Topic
+
+<b>Event-driven architeture while creating and assigning tickets</b>
+
 Date: 2021-05-01
+
 
 ## Status
 
@@ -10,44 +15,37 @@ Accepted
 
 Existing Sysops squad monolithic applictaion is having problems related to ,
 
-    * Elasticity : due to burst of sustomer ticket requests
-    * Reliability :  wrong ticket consultant assignment issue
-    * Availability : system is not available for web-based / call center for ticket entry 
+- Elasticity : due to burst of  ticket requests from multiple customer
+- Reliability :  wrong ticket consultant assignment issue
+- Availability : system is not available for web-based / call center ticket entry 
 
-We want to rearchitect the Sysops squad to handle the elasticity and reliability. 
+We plan to address the above problems by leveraging event driven architecture while creating tickets.
 
 ## Considered options
 
-    Rewrite the sysops squad as greenfield applictaion.
-    Migrate the monolithic using strangler pattern (https://martinfowler.com/bliki/StranglerFigApplication.html) towards microservices incrementally.
+- Leverage message bus such as Apache Kafka to decouple ticket creation service and ticket workflow (assignment) service. Also handle the burst ticket creation scenario.
 
 ## Decision
 
-We want to break the Monlithic Sysops squad application to microservices based architecture. This way we can independently scale and deploy the microservices to handle the appropriate load. 
-Strangler Pattern will us used to move towards microservices incrementally.
+We seperated two main components ticket creation service and ticket workflow (assignment) service. We introduced the message bus (Apache kafka) to handle the elasticity (burst of tickets create request). We can scale  ticket creation service independently of ticket assignment service to handle the load of customer ticket request . We can aknowledge the reciept of ticket creating request immediately to customer by storing that in database and publishing the message to the queue. The ticket assignment service will consume the message and hold on the distributed lock on the expert until the ticket assignment , persistance and ticket notification complete.
 
 ## Consequences
 
-This allow us to replace functionality over time without requiring a big bang rewrite. 
-The plan is to get most benefit by identifying the bounded context which is having lot of problem and move it to seperate microservice. In Sysops squad we are planning to move out ticketing service and assignment workflow service outside of the monolithic. We are also planning to split the monolithic database schema out to respective microservice per database.
-Extracting Ticketing service from the monolithic can be done in following steps,
+Having loadbalancer infront of ticket creation service will able to auto-scale when the burst of ticket request happens. The ticket creation service elasticity problem is solved. By publishing the 'ticket_creation' event over message bus it decouples both creation and assignment service and can independently worked.
 
 
-    Split the code and convert ticketing service into a separate, loosely coupled module within the monolith
-    Split the database and define a separate schema for ticketing service management.
-    Define a standalone Ticketing Service
-    Use the standalone Ticketing Service
-    Remove the old and now unused Ticketing management functionality from the Sysops monolith
+Ticket assignment reliability is more critical and it is solved be using distributed lock on expert. When two or more instances of ticket workflow service are running and planning to execute assignment algorithm , only one instance will hold distributed lock on the matched expert and release when the assignment , notification is complete. This will definately solve wrong expert assignment sysops squad issue.  
 
 
 **Positive:** 
 
-We plan to decompose our system by finding microservice/seam along which service boundaries can emerge and this has to be an incremental approach. By doing this we reduced the overall cost of splitting our services , learn from mistakes quickly , identify the right bounded context , test is throughly , incrementely deploy new services.
-
-
+ - Ticket creation service can be independently scale and handle the elasticity and scalability issue.
+ - By leveraging distributed lock , we ensure only one expert is in action during ticket assignment. Data reliability of ticket assignment shall be solved.
+ 
 
 **Risks:** 
 
-Carefully need to manage redundant or overlapping functionality in two different solutions. Migration of existing database schema and data will be challenging if not planned better.
+ - Adding one more component (message bus) will introduce failure point and it needs to ensure availabiilty of the same.
+ - Message duplication , message lost scenarios needs to be considered and implemented.
 
 
