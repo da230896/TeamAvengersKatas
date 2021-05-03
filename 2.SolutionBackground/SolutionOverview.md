@@ -1,6 +1,6 @@
 # Solution Overview
 
-## Priciples
+## Principles
 - Scalability
 - Feature Extensibility
 - Simplicity
