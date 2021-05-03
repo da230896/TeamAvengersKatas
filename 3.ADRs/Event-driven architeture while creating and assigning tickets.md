@@ -45,7 +45,7 @@ Ticket assignment reliability is more critical and it is solved be using distrib
 
 **Risks:** 
 
- - Adding one more component (message bus) will introduce failure point and it needs to ensure availabiilty of the same.
- - Message duplication , message lost scenarios needs to be considered and implemented.
+ - Adding one more component (message bus) will introduce failure point and needs to ensure availabiilty of the same.
+ - Message duplication , message lost scenarios needs to be handled and implemented.
 
 
