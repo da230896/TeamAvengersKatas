@@ -1,6 +1,6 @@
-## Risks
+# Risks
 
-### Business risk
+## Business risk
 
 1. Notification about ticket not sent to either of the entities
     - We will keep notification via multiple channel so that notification is always received 
@@ -14,7 +14,7 @@
 3. Ticket is stuck in process of allotting an expert
     - Monitor the ticket workflow service and its queue so that before customer contact we are already aware of issue
 
-### Technical risk
+## Technical risk
 
 1. UI application goes down
     - Maintaining several instances of the front end services to give high availability
@@ -30,15 +30,15 @@
     - Keeping the older version ready in such case and hence having deployment strategies
 
 
-## Sensitive Points
+# Sensitive Points
 
-### Business related
+## Business related
 
 1. Training of sysops squad experts since they represent the sysops squad while visiting a customer
 2. Hiring of well versed call center agency since they will also impact customer perception of sysops squad
 3. Content check when user or expert is entering some details in the ticket. It should not be vulgar or insulting.
 
-### Technical
+## Technical
 
 1. Scaling out at correct time
 2. Monitoring and circuit breakers
