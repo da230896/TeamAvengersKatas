@@ -1,5 +1,15 @@
 #Team Avengers ArchitectureKatas2021
 For Katas 2021
+Team Name : Avengers
+Team Members : 
+	- Ashish Bhalgat
+	- Dinesh Agarwal
+	- Sushmi Shrestha
+	- Osayamen Omigie  
+
+Miro board : https://miro.com/app/board/o9J_lHnUEig=/
+Contact email : bhalgatashish@gmail.com
+
 
 ## Solution Structure
 
