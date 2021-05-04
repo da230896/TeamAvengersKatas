@@ -53,7 +53,7 @@ However to reach there we would be incremently break the monolith away. The orde
 
 As per the strangler pattern mentioned in [Strangler Pattern ADR](https://github.com/bhalgat20/ArchitectureKatas2021/blob/main/2.ADRs/StranglerPattern.md) we will have first release which would look like below:
 
-![](../img/FirstRelease.png)
+![](../img/StranglerPattern.PNG)
 
 
 **Auth Components:**
