@@ -12,15 +12,19 @@ Accepted
 
 ## Context and Problem Statement
 
-For our microservices, we need somekind of orchestration or choreography for ticket workflow.
+A microservice-based architecture may have from 10 to 100 or more services. An API gateway can help provide a unified entry point for external consumers, independent of the number and composition of internal microservices.
+
 
 ## Considered options
 
-- easy error handling, easy to trace back reasons the lost tickets
+- Use API Gateway
 
 ## Decision
 
-We decided to maintain orchestration in api gateway. This will give us the capability to solve the problem related to workflow in microservices. Our main principle here is observability.
+
+ - API gateways help to prevent malicious attacks by providing an additional layer of protection from attack vectors such as SQL Injection, XML Parser exploits, and denial-of-service (DoS) attacks.
+ - We prevents exposing internal concerns to external clients using api gateway.
+ - This will give us the capability to handle cross cutting concerns such as validating JWT/access token ,  Authorization and rate limiting.
 
 ## Consequences
 
@@ -29,8 +33,12 @@ This will solve the problem related to workflow. The workflow is related to tick
 
 **Positive:** 
 
- - Handle the workflow and log the error. This will give us the observability for lost tickets and any other issues in the workflow.
-
+ - Handle the API security with rate limiting/throttling.
+ - Handle the cross cutting concerns at one place such as access token validation , authorization.
+ - This may also help in future for analytics and monetization of API incase requirement comes. 
+ 
 **Risks:** 
 
  - Single point of failure
+ - Configuration of the routing logic must be managed during deployment, to ensure proper routing from the external API to the proper microservice
+
