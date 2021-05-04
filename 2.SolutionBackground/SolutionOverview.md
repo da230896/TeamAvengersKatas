@@ -29,7 +29,7 @@ Conceptual models for green field project for Sysops Squad requirement:
 | New domain              | Existing Components                      | Existing Namespace                                | Existing table to be migrated|
 |-------------------------|------------------------------------------|---------------------------------------------------|------------------------------|
 | Customer Service        | Customer profile Support contract        | ss.customer.profile, ss.customer.notification     | Customer, Customer_notification
-| Product Service         | KB maint KB Search                       | ss.kb.maintenace ss.kb.search                     | Article, Tag, Keyword, Article_Tag, Article_Keyword
+| Product Service         | Products, KB maint KB Search             | ss.kb.maintenace ss.kb.search                     | Article, Tag, Keyword, Article_Tag, Article_Keyword
 | Expert Service          | Expert profile                           | ss.exprt.profile                                  | Expert_Profile, Expertise, Location
 | Ticketing Service       | Ticket                                   | ss.ticket                                         | Ticket, Ticket_Type, Ticket_History
 | Admin Service           | User maintenance                         | ss.users                                          |SysOps_User, Profile
