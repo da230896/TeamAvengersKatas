@@ -25,10 +25,4 @@ Table of Content:
 	- [Tradeoffs](2.SolutionBackground/Tradeoffs.md)
 	- [Risks and Sensitive points](2.SolutionBackground/SecurityIssues.md)
 - [ADRs](3.ADRs)
-- [Views and Perspectives](3.ViewsAndPerspectives/Readme.md)
-	- [User Scenarios](3.ViewsAndPerspectives/UserScenariosPerspective.md)
-	- [Informational](3.ViewsAndPerspectives/InformationModels.md) 
-	- [Concurrency](3.ViewsAndPerspectives/Concurrency.md)
-	- [Deployment](3.ViewsAndPerspectives/DeploymentView.md)
-	- [Cost Analysis](3.ViewsAndPerspectives/CostAnalysis.md) 
-	- [Security](3.ViewsAndPerspectives/Security.md)
+
