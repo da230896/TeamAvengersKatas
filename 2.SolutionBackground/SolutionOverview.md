@@ -1,9 +1,9 @@
 # Solution Overview
 
 ## Principles
-- Scalability
-- Feature Extensibility
 - Simplicity
+- Scalability
+- Testability
 - Measurements and monitoring
 
 
