@@ -3,7 +3,7 @@ For Katas 2021
 - Team Name : Avengers
 - Team Members : 
 	- Ashish Bhalgat
-	- Dinesh Agarwal
+	- Dinesh Agarwal (https://www.linkedin.com/in/dagar3/)
 	- Sushmi Shrestha
 	- Osayamen Omigie  
 
