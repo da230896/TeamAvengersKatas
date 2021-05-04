@@ -18,9 +18,9 @@ Description of current problem of Squad Ops
 ## Architecture Attributes 
 - Reliability - Tickets Lost, Wrong Expert Assignment.
 - Elasticity - Not able to handle burst of tickets.
-- Deployability - Long time to push Changes and breaks
+- Testability and Deployability - Long time to push Changes and breaks and deployment breaks system
 - Availability - available for customers and call center
-- Testability - deployment breaks system
+- Observability - ticket lost 
 - Scalability - lucrative business, might grow in country
 - Security - stores customer and experts personal information (like name, address, contact email, payment details)
 - Data integrity - operational reports for managers
