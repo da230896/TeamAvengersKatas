@@ -39,7 +39,7 @@ System should be reliable even in case of some of the components fail. This is b
 
 ## Strangler Pattern Implementation
 
-However to reach there we would be incremently break the monolith away. The order of taking out component would be based on usage, load of the component and how problematic the components is in the current monolith. We will migrate components in the following order:
+However to reach there we would be incremently break the monolith away. The order of taking out component would be based on usage, load of the component and how problematic the components is in the current monolith. As of now, we expect that we would be migrating components in the following order:
 - Auth 
 - Ticketing/ticket workflow
 - Payment
