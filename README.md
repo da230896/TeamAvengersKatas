@@ -1,7 +1,7 @@
 #Team Avengers ArchitectureKatas2021
 For Katas 2021
-Team Name : Avengers
-Team Members : 
+- Team Name : Avengers
+- Team Members : 
 	- Ashish Bhalgat
 	- Dinesh Agarwal
 	- Sushmi Shrestha
