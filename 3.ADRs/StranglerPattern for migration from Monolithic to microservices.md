@@ -16,17 +16,19 @@ Monolith is the original application developed to support SysOps squad. It conta
 
 However, there are reliability & elasticity issues due to spike in usgaes and the number of customers using the system. We believe the monolith was built to a specific capability which was exceed during the spike conditions.
 
-We want to rearchitect the Sysops squad to handle the elasticity and reliability. 
+We want to architect the Sysops squad to handle the elasticity and reliability. 
 
 ## Considered options
 
-1. Rewrite the sysops squad as greenfield applictaion.
+1. Rewrite the sysops squad as greenfield application.
 2. Migrate the monolithic using strangler pattern (https://martinfowler.com/bliki/StranglerFigApplication.html) towards microservices incrementally. (Recommended)
 
 ## Decision
 
-We want to break the Monlithic Sysops squad application to microservices based architecture. This way we can independently scale and deploy the microservices to handle the appropriate load. 
+We want to break the Monolithic Sysops squad application to microservices based architecture. This way we can independently scale and deploy the microservices to handle the appropriate load. 
 Strangler Pattern will us used to move towards microservices incrementally.
+
+![](../img/StranglerPattern.PNG)
 
 ## Consequences
 
@@ -50,7 +52,7 @@ By doing this ,
  - Learn from mistakes quickly 
  - Identify the right bounded context 
  - Test is throughly ,
- - Incrementely deploy new services. 
+ - Incrementally deploy new services. 
  - This will also improve the time to market.
 
 
