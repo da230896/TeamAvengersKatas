@@ -7,8 +7,8 @@ For Katas 2021
 	- Sushmi Shrestha
 	- Osayamen Omigie  
 
-Miro board : https://miro.com/app/board/o9J_lHnUEig=/
-Contact email : bhalgatashish@gmail.com
+- Miro board : https://miro.com/app/board/o9J_lHnUEig=/
+- Contact email : bhalgatashish@gmail.com
 
 
 ## Solution Structure
