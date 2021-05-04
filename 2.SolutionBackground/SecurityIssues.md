@@ -7,8 +7,9 @@
     - User has always the option of calling the call center and knowing the status of the ticket
 
 2. Expert alloted to a ticket but did not show up. 
-    - User contact call center and let the system record that.
-    - Call center entity can update the ticket (remove the assigned expert from ticket and send it for reassignment)
+    - User indicates in the user client app that expert did not show up.
+    - System updates the ticket (remove the assigned expert from ticket)
+    - Ticket is re-assigned
     - We can have expert assignment based on rate of fulfillment
 
 3. Ticket is stuck in process of allotting an expert

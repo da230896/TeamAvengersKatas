@@ -2,7 +2,7 @@
 
 1. We have decided to use a Available and partitioned database in ticketing service. This is because we would need users to have quick look at the ticket either created just now or historic ones. 
 
-It has been observed that user for sysops squad faced a lot of problem of system being unavailable and hence we went with Availability of DB as compared to consistency. Since user is anyways going to see update in few seconds this does not impact the perceived performance of the system. 
+It has been observed that user for sysops squad faced a lot of problem of system being unavailable and hence we went with Availability of DB as compared to consistency. Since user are anyways going to see update in few seconds this does not impact the perceived performance of the system. 
 
 Moreover the expert assignment and visit is not a short time task so user is, we believe, ready to see some lags as compared to unavailability. Also, Availability gives user impression of system working on it(like ticket assignment) which it understands will take time.
 

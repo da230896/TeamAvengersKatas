@@ -30,7 +30,7 @@ fills out.
 ## Ticket Workflow
 The ticketing workflow starts when a customer enters a problem ticket into the system, and ends when the customer completes the survey after the repair is done. This workflow is outlined as follows:
 1. Customers who have purchased the support plan enter a problem ticket using the Sysops Squad website.
-2. Once a problem ticket is entered in the system, the system then determines which Sysops Squad expert would be the best fit for the job based on skills, cur‐ rent location, service area, and availability (free or currently on a job).
+2. Once a problem ticket is entered in the system, the system then determines which Sysops Squad expert would be the best fit for the job based on skills, current location, service area, and availability (free or currently on a job).
 3. Once assigned, the problem ticket is uploaded to a dedicated custom mobile app on the Sysops Squad expert’s mobile device. The expert is also notified via a text message that they have a new problem ticket. The customer is notified through an SMS text message or email (based on theirprofile preference) that the expert is on their way.
 4. The expert uses the custom mobile application on their phone to retrieve the ticket information and location. The sysops squad expert can also access aknowledge base through the mobile app to find out what things have been done in the past to fix the problem.
 5. Once the expert fixes the problem, they mark the ticket as “complete”. Thesysops squad expert can then add information about the problem and repair information to the knowledge base.

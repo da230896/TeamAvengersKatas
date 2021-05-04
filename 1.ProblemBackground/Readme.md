@@ -10,7 +10,7 @@ Description of current problem of Squad Ops
 5. Call Center
 6. System
 
-## Use cases for all actors:
+## Use cases for all actors: TODO:Change image to clearer one
 
 ![usecase](../img/customer_manager_expert_usecase.png)
 ![admin_system_callcenter](../img/admin_system_callcenter_usecase.png)

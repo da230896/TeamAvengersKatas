@@ -14,4 +14,5 @@ This can be used when user wants to register multiple equipments under one ticke
 ### Admin
 
 Admin can access the billing of the customer. We have assumed that admin can trigger billing in case of an issue and look into the billing process on customer request.
+Also that admin also doubles as a customer serivce role.
 
