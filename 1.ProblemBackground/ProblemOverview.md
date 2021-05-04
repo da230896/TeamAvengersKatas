@@ -38,11 +38,10 @@ The ticketing workflow starts when a customer enters a problem ticket into the s
 7. The system receives the completed survey from the customer and records thesurvey information.
 
 ## Existing Architecture Component
-<img src="https://user-images.githubusercontent.com/1282526/116562981-d8bfc100-a92d-11eb-9588-811c65b9949a.png" alt="arch-cmp" width="400"/>
+![existing_components](../img/existing_components.png)
 
 ## Existing Database Design
-<img src="https://user-images.githubusercontent.com/1282526/116563180-fc830700-a92d-11eb-84d4-3efc47c0b23b.png" alt="arch-cmp" width="500"/>
-
+![existing_db](../img/existing_db.png)
 
 ## Non Ticket Workflow
 The manager keeps track of problem ticket operations and receives operational and analytical reports about the overall Sysops Squad problem ticket system.
