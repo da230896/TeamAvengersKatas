@@ -78,13 +78,14 @@ The database will be a relational database and will track tickets, customers tha
 
 The ticket workflow microservice will have a load balance in front of it and it will scale per increase in workload.
 
-**Payment Component:**
+**Payment Component^^:**
 
-This micro servie is respondsible for support plan and billing mangaement. It will be served by a relational database that has the payment, payment method, contract and billing tables migrated to it.
+This micro servie is respondsible for support plan and billing mangaement. It will be served by a relational database that has the payment, payment method, contract and billing tables migrated to it. 
 
 
-**Customer Component:**
+**Customer Component^^:**
 
-The customer service will be respondsible for managing the customer profile. Tables customer and custome_notification will be migrated to this serivce.
+The customer service will be respondsible for managing the customer profile. Tables customer and custome_notification will be migrated to this serivce. 
+Because this service is prone to spike in traffic, it will also be load balance across instances that can scale in and scale out elastically.
 
-Because this service is prone to spike in traffic, it will also be load balance across instances that can scale.
+^^: (These services are not shown in the diagram above since they would be migrated later.)
